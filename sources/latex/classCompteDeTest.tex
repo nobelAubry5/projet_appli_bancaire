@@ -1,0 +1,61 @@
+\hypertarget{classCompteDeTest}{}\doxysection{Compte\+De\+Test Class Reference}
+\label{classCompteDeTest}\index{CompteDeTest@{CompteDeTest}}
+
+
+Inheritance diagram for Compte\+De\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classCompteDeTest__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Compte\+De\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classCompteDeTest__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCompteDeTest_a5913f90542592e5afe9e91c76d42ac5f}\label{classCompteDeTest_a5913f90542592e5afe9e91c76d42ac5f}} 
+{\bfseries Compte\+De\+Test} (int p\+\_\+no\+Compte, double p\+\_\+taux\+Interet, double p\+\_\+solde, const std\+::string \&p\+\_\+description, const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \&p\+\_\+date\+Ouverture)
+\item 
+virtual double \mbox{\hyperlink{classCompteDeTest_abb825d2030986768ff5ba3a6e1e49c1d}{calculer\+Interet}} () const override
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle qui calcule l\textquotesingle{}intérêt à payer sur le compte. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompteDeTest_aab153503bfc419ba34985d6af05a5246}\label{classCompteDeTest_aab153503bfc419ba34985d6af05a5246}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classbancaire_1_1Compte}{Compte}} $>$ \mbox{\hyperlink{classCompteDeTest_aab153503bfc419ba34985d6af05a5246}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Méthode de clonage pour créer une copie du compte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCompteDeTest_abb825d2030986768ff5ba3a6e1e49c1d}\label{classCompteDeTest_abb825d2030986768ff5ba3a6e1e49c1d}} 
+\index{CompteDeTest@{CompteDeTest}!calculerInteret@{calculerInteret}}
+\index{calculerInteret@{calculerInteret}!CompteDeTest@{CompteDeTest}}
+\doxysubsubsection{\texorpdfstring{calculerInteret()}{calculerInteret()}}
+{\footnotesize\ttfamily virtual double Compte\+De\+Test\+::calculer\+Interet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Méthode virtuelle qui calcule l\textquotesingle{}intérêt à payer sur le compte. 
+
+Méthode qui permet de calculer les intérêts d’un compte selon sa spécialisation.
+
+\begin{DoxyReturn}{Returns}
+Par défaut, retourne 0 pour la classe de base. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classbancaire_1_1Compte_a1b2a90ab52ab6fb9cbf4f69a6f13020b}{bancaire\+::\+Compte}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/\mbox{\hyperlink{CompteTesteur_8cpp}{Compte\+Testeur.\+cpp}}\end{DoxyCompactItemize}

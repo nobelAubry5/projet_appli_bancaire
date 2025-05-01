@@ -1,0 +1,102 @@
+\hypertarget{CompteTesteur_8cpp}{}\doxysection{tests/\+Compte\+Testeur.cpp File Reference}
+\label{CompteTesteur_8cpp}\index{tests/CompteTesteur.cpp@{tests/CompteTesteur.cpp}}
+
+
+Test unitaire de la classe Compte.  
+
+
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}Compte.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Epargne.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Contrat\+Exception.\+h\char`\"{}}\newline
+Include dependency graph for Compte\+Testeur.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CompteTesteur_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCompteDeTest}{Compte\+De\+Test}}
+\item 
+class \mbox{\hyperlink{classUnCompte}{Un\+Compte}}
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}une fixture utilisé pour les tests de la classe Compte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{CompteTesteur_8cpp_ad21f55d89b518e64ddb60502a8034ddf}{TEST}} (\mbox{\hyperlink{classbancaire_1_1Compte}{Compte}}, Compte\+Test\+\_\+constructeur\+\_\+par\+Defaut\+\_\+objet\+Valide)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec paramètres Cas valides\+: Création d\textquotesingle{}un objet Compte avec des valeurs valides et vérification de tous les attributs. Cas invalides\+: constructeur\+Parametre\+Invalide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_a05223e9acfd4fddf52903373183fd6bf}\label{CompteTesteur_8cpp_a05223e9acfd4fddf52903373183fd6bf}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_a05223e9acfd4fddf52903373183fd6bf}{TEST}} (\mbox{\hyperlink{classbancaire_1_1Compte}{Compte}}, constructeur\+\_\+\+Numero\+Compte\+Invalide\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un numéro de compte invalide (négatif ou 0). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_a7367efed730194c0f1bab0b7698a13cb}\label{CompteTesteur_8cpp_a7367efed730194c0f1bab0b7698a13cb}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_a7367efed730194c0f1bab0b7698a13cb}{TEST}} (\mbox{\hyperlink{classbancaire_1_1Compte}{Compte}}, constructeur\+\_\+\+Description\+Invalide\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec une description invalide (vide). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_a0ad51acde97238d7edfb2b727ff1a0a6}\label{CompteTesteur_8cpp_a0ad51acde97238d7edfb2b727ff1a0a6}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_a0ad51acde97238d7edfb2b727ff1a0a6}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, Req\+No\+Compte\+\_\+\+No\+Compte\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+No\+Compte(); Cas valides\+: req\+No\+Compte vérifier le retour du numéro de compte Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_a98502f95e440f0b377137bc6d553ddb7}\label{CompteTesteur_8cpp_a98502f95e440f0b377137bc6d553ddb7}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_a98502f95e440f0b377137bc6d553ddb7}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, Req\+Taux\+Interet\+\_\+\+Taux\+Interet\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Taux\+Interet(); Cas valides\+: req\+Taux\+Interet vérifier le retour du taux d\textquotesingle{}intérêt. Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_aced79a776aff0f4ffa9fe105371391c2}\label{CompteTesteur_8cpp_aced79a776aff0f4ffa9fe105371391c2}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_aced79a776aff0f4ffa9fe105371391c2}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, Req\+Solde\+\_\+\+Solde\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Solde(); Cas valides\+: req\+Solde vérifier le retour du solde. Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_a3c236ba409126f56cc08ed39529798b4}\label{CompteTesteur_8cpp_a3c236ba409126f56cc08ed39529798b4}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_a3c236ba409126f56cc08ed39529798b4}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, Req\+Description\+\_\+\+Description\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Description(); Cas valides\+: req\+Description vérifier le retour de la description. Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_a8bafc18bcc4c1f345e38af3b0f8ae614}\label{CompteTesteur_8cpp_a8bafc18bcc4c1f345e38af3b0f8ae614}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_a8bafc18bcc4c1f345e38af3b0f8ae614}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, Req\+Date\+Ouverture\+\_\+\+Date\+Ouverture\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Date\+Ouverture(); Cas valides\+: req\+Date\+Ouverture vérifier le retour de la date d\textquotesingle{}ouverture. Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_ab44abf6c0b85791220f76e68f91ce77b}\label{CompteTesteur_8cpp_ab44abf6c0b85791220f76e68f91ce77b}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_ab44abf6c0b85791220f76e68f91ce77b}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, calculer\+Interet)
+\begin{DoxyCompactList}\small\item\em Test de la méthode calculer\+Interet(); Cas valide\+: Vérifier le retour de 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_af2ee1ad71ec0514716857b41b84ff607}\label{CompteTesteur_8cpp_af2ee1ad71ec0514716857b41b84ff607}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_af2ee1ad71ec0514716857b41b84ff607}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, Asg\+Taux\+Interet\+\_\+\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode mutateur asg\+Taux\+Interet(); Cas valides\+: asg\+Taux\+Interet assigne un nouveau taux d\textquotesingle{}intéret au compte. Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_a8856d4875cef4f9808f6e89966d54e6c}\label{CompteTesteur_8cpp_a8856d4875cef4f9808f6e89966d54e6c}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_a8856d4875cef4f9808f6e89966d54e6c}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, Asg\+Solde\+\_\+\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode mutateur asg\+Solde(); Cas valides\+: asg\+Solde assigne un nouveau solde au compte. Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_afedc9c9aba4e4da190a2a4b6a8afd6bb}\label{CompteTesteur_8cpp_afedc9c9aba4e4da190a2a4b6a8afd6bb}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_afedc9c9aba4e4da190a2a4b6a8afd6bb}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, Asg\+Description\+\_\+\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode mutateur asg\+Description(); Cas valides\+: asg\+Description assigne une description au compte. Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CompteTesteur_8cpp_a1a8b917ee1135df638570e235a65611f}\label{CompteTesteur_8cpp_a1a8b917ee1135df638570e235a65611f}} 
+\mbox{\hyperlink{CompteTesteur_8cpp_a1a8b917ee1135df638570e235a65611f}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnCompte}{Un\+Compte}}, Req\+Compte\+Formate\+\_\+\+\_\+\+Format\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Compte\+Formate(); Cas valides\+: req\+Compte\+Formate vérifier le format du compte. Cas invalides\+: aucun. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test unitaire de la classe Compte. 
+
+\begin{DoxyAuthor}{Author}
+Aubry Nobel Niyonkuru 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05 avril 2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{CompteTesteur_8cpp_ad21f55d89b518e64ddb60502a8034ddf}\label{CompteTesteur_8cpp_ad21f55d89b518e64ddb60502a8034ddf}} 
+\index{CompteTesteur.cpp@{CompteTesteur.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!CompteTesteur.cpp@{CompteTesteur.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbancaire_1_1Compte}{Compte}}}]{,  }\item[{Compte\+Test\+\_\+constructeur\+\_\+par\+Defaut\+\_\+objet\+Valide}]{ }\end{DoxyParamCaption})}
+
+
+
+Test du constructeur avec paramètres Cas valides\+: Création d\textquotesingle{}un objet Compte avec des valeurs valides et vérification de tous les attributs. Cas invalides\+: constructeur\+Parametre\+Invalide. 
+
+
+\begin{DoxyItemize}
+\item Numéro de compte non positif.
+\item Description vide. 
+\end{DoxyItemize}

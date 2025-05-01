@@ -1,0 +1,149 @@
+\hypertarget{classEpargne}{}\doxysection{Epargne Class Reference}
+\label{classEpargne}\index{Epargne@{Epargne}}
+
+
+Classe dérivée de la classe Compte.  
+
+
+
+
+{\ttfamily \#include $<$Epargne.\+h$>$}
+
+
+
+Inheritance diagram for Epargne\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classEpargne__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Epargne\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classEpargne__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEpargne_a3d9ed54ae170761e1a3add974c39c39c}{Epargne}} (int p\+\_\+no\+Compte, double p\+\_\+taux\+Interet, double p\+\_\+solde, const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \&p\+\_\+date\+Ouverture, const std\+::string \&p\+\_\+description=\char`\"{}Epargne\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classEpargne}{Epargne}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEpargne_ab834f77ef22c902c6ad27c6ffc50d647}\label{classEpargne_ab834f77ef22c902c6ad27c6ffc50d647}} 
+virtual \mbox{\hyperlink{classEpargne_ab834f77ef22c902c6ad27c6ffc50d647}{$\sim$\+Epargne}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel de la classe \mbox{\hyperlink{classEpargne}{Epargne}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classEpargne_a7f25db9fff8ca129e27d20ee3bb91ea0}{calculer\+Interet}} () const
+\begin{DoxyCompactList}\small\item\em Calcule l\textquotesingle{}intérêt du compte. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classbancaire_1_1Compte_ad3774c0ef960f934aeea5967ae7bcdf6}{Compte}} $>$ \mbox{\hyperlink{classEpargne_a1ac951be521644488b099971b32bb06f}{clone}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour créer une copie allouée sur le tas. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEpargne_a5de7426af931b9dcb99ae14558bbdda9}{req\+Compte\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir une représentation formatée du compte d\textquotesingle{}épargne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Classe dérivée de la classe Compte. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEpargne_a3d9ed54ae170761e1a3add974c39c39c}\label{classEpargne_a3d9ed54ae170761e1a3add974c39c39c}} 
+\index{Epargne@{Epargne}!Epargne@{Epargne}}
+\index{Epargne@{Epargne}!Epargne@{Epargne}}
+\doxysubsubsection{\texorpdfstring{Epargne()}{Epargne()}}
+{\footnotesize\ttfamily Epargne\+::\+Epargne (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+no\+Compte,  }\item[{double}]{p\+\_\+taux\+Interet,  }\item[{double}]{p\+\_\+solde,  }\item[{const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \&}]{p\+\_\+date\+Ouverture,  }\item[{const std\+::string \&}]{p\+\_\+description = {\ttfamily \char`\"{}Epargne\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classEpargne}{Epargne}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Compte} & Le numéro de compte \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet} & Le taux d\textquotesingle{}intérêt du compte (entre 0.\+001 et 0.\+035) \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+solde} & Le solde initial du compte (doit être positif ou nul) \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+description} & La description du compte, \char`\"{}\+Epargne\char`\"{} par défaut \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date\+Ouverture} & La date d\textquotesingle{}ouverture du compte\\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Compte} & Le numéro de compte. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet} & Le taux d\textquotesingle{}intérêt du compte. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+solde} & Le solde initial du compte. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+description} & La description du compte. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date\+Ouverture} & La date d\textquotesingle{}ouverture du compte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+solde doit être positif ou nul 
+
+p\+\_\+taux\+Interet doit être entre 0.\+001 et 0.\+035 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+description prends la valeur de p\+\_\+description ou si vide il prends la valeur Épargne 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEpargne_a7f25db9fff8ca129e27d20ee3bb91ea0}\label{classEpargne_a7f25db9fff8ca129e27d20ee3bb91ea0}} 
+\index{Epargne@{Epargne}!calculerInteret@{calculerInteret}}
+\index{calculerInteret@{calculerInteret}!Epargne@{Epargne}}
+\doxysubsubsection{\texorpdfstring{calculerInteret()}{calculerInteret()}}
+{\footnotesize\ttfamily double Epargne\+::calculer\+Interet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calcule l\textquotesingle{}intérêt du compte. 
+
+\begin{DoxyReturn}{Returns}
+Le montant des intérêts calculés 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classbancaire_1_1Compte_a1b2a90ab52ab6fb9cbf4f69a6f13020b}{bancaire\+::\+Compte}}.
+
+\mbox{\Hypertarget{classEpargne_a1ac951be521644488b099971b32bb06f}\label{classEpargne_a1ac951be521644488b099971b32bb06f}} 
+\index{Epargne@{Epargne}!clone@{clone}}
+\index{clone@{clone}!Epargne@{Epargne}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classbancaire_1_1Compte}{bancaire\+::\+Compte}} $>$ Epargne\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Méthode pour créer une copie allouée sur le tas. 
+
+\begin{DoxyReturn}{Returns}
+Un pointeur unique vers une copie de l\textquotesingle{}objet courant 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbancaire_1_1Compte_ae176fb80746712350b54453110689ce5}{bancaire\+::\+Compte}}.
+
+\mbox{\Hypertarget{classEpargne_a5de7426af931b9dcb99ae14558bbdda9}\label{classEpargne_a5de7426af931b9dcb99ae14558bbdda9}} 
+\index{Epargne@{Epargne}!reqCompteFormate@{reqCompteFormate}}
+\index{reqCompteFormate@{reqCompteFormate}!Epargne@{Epargne}}
+\doxysubsubsection{\texorpdfstring{reqCompteFormate()}{reqCompteFormate()}}
+{\footnotesize\ttfamily std\+::string Epargne\+::req\+Compte\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir une représentation formatée du compte d\textquotesingle{}épargne. 
+
+\begin{DoxyReturn}{Returns}
+Une chaîne de caractères représentant le compte d\textquotesingle{}épargne 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Epargne_8h}{Epargne.\+h}}\item 
+\mbox{\hyperlink{Epargne_8cpp}{Epargne.\+cpp}}\end{DoxyCompactItemize}

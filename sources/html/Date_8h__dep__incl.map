@@ -1,0 +1,15 @@
+<map id="Date.h" name="Date.h">
+<area shape="rect" id="node1" title="Fichier qui contient l&#39;interface de la classe Date qui sert au maintien et à la manipulation des date..." alt="" coords="401,5,467,32"/>
+<area shape="rect" id="node2" href="$Client_8cpp.html" title="Implémentation de la classe Client." alt="" coords="5,229,92,256"/>
+<area shape="rect" id="node3" href="$Client_8h_source.html" title=" " alt="" coords="91,155,163,181"/>
+<area shape="rect" id="node4" href="$ClientTesteur_8cpp.html" title="Test unitaire de la classe Client." alt="" coords="116,229,285,256"/>
+<area shape="rect" id="node5" href="$Compte_8cpp.html" title="Implémentation de la classe de base abstraite Compte." alt="" coords="660,155,760,181"/>
+<area shape="rect" id="node6" href="$Compte_8h.html" title="Classe de base abstraite Compte." alt="" coords="391,80,477,107"/>
+<area shape="rect" id="node11" href="$CompteTesteur_8cpp.html" title="Test unitaire de la classe Compte." alt="" coords="769,229,952,256"/>
+<area shape="rect" id="node13" href="$Date_8cpp.html" title="Implantation de la classe Date." alt="" coords="835,80,915,107"/>
+<area shape="rect" id="node7" href="$Cheque_8cpp.html" title="Implémentation de la classe Cheque." alt="" coords="310,229,409,256"/>
+<area shape="rect" id="node8" href="$Cheque_8h.html" title="Classe Cheque, dérivée de la classe Compte." alt="" coords="289,155,371,181"/>
+<area shape="rect" id="node9" href="$Epargne_8cpp.html" title="Implémentation de la classe Epargne." alt="" coords="433,229,536,256"/>
+<area shape="rect" id="node10" href="$Epargne_8h.html" title="Classe Epargne, dérivée de la classe Compte." alt="" coords="497,155,584,181"/>
+<area shape="rect" id="node12" href="$EpargneTesteur_8cpp.html" title="Test unitaire de la classe Epargne." alt="" coords="561,229,745,256"/>
+</map>

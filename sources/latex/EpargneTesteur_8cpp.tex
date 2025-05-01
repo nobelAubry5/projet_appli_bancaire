@@ -1,0 +1,72 @@
+\hypertarget{EpargneTesteur_8cpp}{}\doxysection{tests/\+Epargne\+Testeur.cpp File Reference}
+\label{EpargneTesteur_8cpp}\index{tests/EpargneTesteur.cpp@{tests/EpargneTesteur.cpp}}
+
+
+Test unitaire de la classe \mbox{\hyperlink{classEpargne}{Epargne}}.  
+
+
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Epargne.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Contrat\+Exception.\+h\char`\"{}}\newline
+Include dependency graph for Epargne\+Testeur.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EpargneTesteur_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classUneEpargne}{Une\+Epargne}}
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}une fixture utilisé pour les tests de la classe \mbox{\hyperlink{classEpargne}{Epargne}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{EpargneTesteur_8cpp_a1eb89f26c8998f28c0ec4ce5888815d7}{TEST}} (Epargne\+Test, Constructeur\+\_\+\+Parametres\+Valides\+\_\+\+Objet\+Valide)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec paramètres valides Cas valides\+: Création d\textquotesingle{}un objet \mbox{\hyperlink{classEpargne}{Epargne}} avec des valeurs valides et vérification des attributs Cas invalides\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{EpargneTesteur_8cpp_aa146615181c920be663fffbf2376cd42}\label{EpargneTesteur_8cpp_aa146615181c920be663fffbf2376cd42}} 
+\mbox{\hyperlink{EpargneTesteur_8cpp_aa146615181c920be663fffbf2376cd42}{TEST}} (Epargne\+Test, Constructeur\+\_\+\+Solde\+Negatif\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un solde négatif. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{EpargneTesteur_8cpp_a06d692ca6e4f1f5fb9ede8148891edfc}\label{EpargneTesteur_8cpp_a06d692ca6e4f1f5fb9ede8148891edfc}} 
+\mbox{\hyperlink{EpargneTesteur_8cpp_a06d692ca6e4f1f5fb9ede8148891edfc}{TEST}} (Epargne\+Test, Constructeur\+\_\+\+Taux\+Interet\+Hors\+Limites\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un taux d\textquotesingle{}intéret hors-\/limites. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{EpargneTesteur_8cpp_abe066241d551780d43b2ea126ece48d0}\label{EpargneTesteur_8cpp_abe066241d551780d43b2ea126ece48d0}} 
+\mbox{\hyperlink{EpargneTesteur_8cpp_abe066241d551780d43b2ea126ece48d0}{TEST\+\_\+F}} (\mbox{\hyperlink{classUneEpargne}{Une\+Epargne}}, Calculer\+Interet)
+\begin{DoxyCompactList}\small\item\em Test de la méthode calculer\+Interet() Cas valide \+: Vérifie que les intérêts sont correctement calculés. Cas invalide \+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{EpargneTesteur_8cpp_a50f34a16d170d2ecd0980a6f81157cb1}\label{EpargneTesteur_8cpp_a50f34a16d170d2ecd0980a6f81157cb1}} 
+\mbox{\hyperlink{EpargneTesteur_8cpp_a50f34a16d170d2ecd0980a6f81157cb1}{TEST\+\_\+F}} (\mbox{\hyperlink{classUneEpargne}{Une\+Epargne}}, Req\+Compte\+Formate\+\_\+\+Format\+Correct)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Compte\+Formate() Cas valide \+: Vérifie que le format retourné est correct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test unitaire de la classe \mbox{\hyperlink{classEpargne}{Epargne}}. 
+
+\begin{DoxyAuthor}{Author}
+Aubry Nobel Niyonkuru 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05 avril 2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{EpargneTesteur_8cpp_a1eb89f26c8998f28c0ec4ce5888815d7}\label{EpargneTesteur_8cpp_a1eb89f26c8998f28c0ec4ce5888815d7}} 
+\index{EpargneTesteur.cpp@{EpargneTesteur.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!EpargneTesteur.cpp@{EpargneTesteur.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Epargne\+Test}]{,  }\item[{Constructeur\+\_\+\+Parametres\+Valides\+\_\+\+Objet\+Valide}]{ }\end{DoxyParamCaption})}
+
+
+
+Test du constructeur avec paramètres valides Cas valides\+: Création d\textquotesingle{}un objet \mbox{\hyperlink{classEpargne}{Epargne}} avec des valeurs valides et vérification des attributs Cas invalides\+: 
+
+
+\begin{DoxyItemize}
+\item req\+Solde le solde est négatif
+\item req\+Taux\+Interet est hors limites (minimum est de 0.\+1\% et au maximum 3.\+5\%) 
+\end{DoxyItemize}

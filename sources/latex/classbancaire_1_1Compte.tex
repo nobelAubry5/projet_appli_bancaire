@@ -1,0 +1,302 @@
+\hypertarget{classbancaire_1_1Compte}{}\doxysection{bancaire\+::Compte Class Reference}
+\label{classbancaire_1_1Compte}\index{bancaire::Compte@{bancaire::Compte}}
+
+
+Classe modélisant tous les types de comptes d’un client.  
+
+
+
+
+{\ttfamily \#include $<$Compte.\+h$>$}
+
+
+
+Inheritance diagram for bancaire\+::Compte\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classbancaire_1_1Compte__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbancaire_1_1Compte_ad3774c0ef960f934aeea5967ae7bcdf6}{Compte}} (int p\+\_\+no\+Compte, double p\+\_\+taux\+Interet, double p\+\_\+solde, const std\+::string \&p\+\_\+description, const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \&p\+\_\+date\+Ouverture)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classbancaire_1_1Compte_a15a9dd06b34b949817f2ca345ed3ebd5}{$\sim$\+Compte}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbancaire_1_1Compte_afd048a6379fba56659f555bf2faeec29}{req\+No\+Compte}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le numéro de compte. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classbancaire_1_1Compte_a4053ef50946772548fcb743a691c6e91}{req\+Taux\+Interet}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le taux d\textquotesingle{}intérêt. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classbancaire_1_1Compte_af29ace93cf63d6c4a7fd3d0a39ab166f}{req\+Solde}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le solde. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classbancaire_1_1Compte_aff6a2b802b26a6a1030fab2c8de34bfc}{req\+Description}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la description. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \& \mbox{\hyperlink{classbancaire_1_1Compte_adacbc33a381d2e254ca75445091bc0bc}{req\+Date\+Ouverture}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la date d\textquotesingle{}ouverture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbancaire_1_1Compte_a5fc1553236d3a4d88b026bdf8d02fb9a}{asg\+Taux\+Interet}} (double p\+\_\+taux\+Interet)
+\begin{DoxyCompactList}\small\item\em Mutateur pour le taux d\textquotesingle{}intérêt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbancaire_1_1Compte_a304a5d0ef69cac0831e20e081b081b27}{asg\+Solde}} (double p\+\_\+solde)
+\begin{DoxyCompactList}\small\item\em Mutateur pour le solde. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbancaire_1_1Compte_a650f1cba5374bc35e6a213425cd456a2}{asg\+Description}} (const std\+::string \&p\+\_\+description)
+\begin{DoxyCompactList}\small\item\em Mutateur pour la description. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbancaire_1_1Compte_ae176fb80746712350b54453110689ce5}\label{classbancaire_1_1Compte_ae176fb80746712350b54453110689ce5}} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classbancaire_1_1Compte}{Compte}} $>$ \mbox{\hyperlink{classbancaire_1_1Compte_ae176fb80746712350b54453110689ce5}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em Méthode de clonage pour créer une copie du compte. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classbancaire_1_1Compte_a1b2a90ab52ab6fb9cbf4f69a6f13020b}{calculer\+Interet}} () const
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle qui calcule l\textquotesingle{}intérêt à payer sur le compte. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classbancaire_1_1Compte_a0fa547193d6056cf12d75a7ac38bc2a9}{req\+Compte\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em Méthode qui formate les informations du compte sous forme de chaîne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbancaire_1_1Compte_a7648e3741e924af0bcabf99c697e4176}\label{classbancaire_1_1Compte_a7648e3741e924af0bcabf99c697e4176}} 
+void \mbox{\hyperlink{classbancaire_1_1Compte_a7648e3741e924af0bcabf99c697e4176}{verifie\+Invariant}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour vérifier les invariants de la classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe modélisant tous les types de comptes d’un client. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbancaire_1_1Compte_ad3774c0ef960f934aeea5967ae7bcdf6}\label{classbancaire_1_1Compte_ad3774c0ef960f934aeea5967ae7bcdf6}} 
+\index{bancaire::Compte@{bancaire::Compte}!Compte@{Compte}}
+\index{Compte@{Compte}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{Compte()}{Compte()}}
+{\footnotesize\ttfamily Compte\+::\+Compte (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+no\+Compte,  }\item[{double}]{p\+\_\+taux\+Interet,  }\item[{double}]{p\+\_\+solde,  }\item[{const std\+::string \&}]{p\+\_\+description,  }\item[{const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \&}]{p\+\_\+date\+Ouverture }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec paramètres. 
+
+Constructeur de la classe \mbox{\hyperlink{classbancaire_1_1Compte}{Compte}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Compte} & Numéro du compte \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet} & Taux d\textquotesingle{}intérêt du compte \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+solde} & Solde du compte \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+description} & Description du compte \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date\+Ouverture} & Date d\textquotesingle{}ouverture du compte\\
+\hline
+ & {\em p\+\_\+no\+Compte} & Le numéro de compte. \\
+\hline
+ & {\em p\+\_\+taux\+Interet} & Le taux d\textquotesingle{}intérêt du compte. \\
+\hline
+ & {\em p\+\_\+solde} & Le solde initial du compte. \\
+\hline
+ & {\em p\+\_\+description} & La description du compte. \\
+\hline
+ & {\em p\+\_\+date\+Ouverture} & La date d\textquotesingle{}ouverture du compte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+no\+Compte doit etre positif 
+
+p\+\_\+description ne doit pas etre vide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+no\+Compte prends la valeur de p\+\_\+no\+Compte 
+
+m\+\_\+taux\+Interet prends la valeur de p\+\_\+taux\+Interet 
+
+m\+\_\+solde prends la valeur de p\+\_\+solde 
+
+m\+\_\+description prends la valeur de p\+\_\+description 
+
+m\+\_\+date\+Ouverture prends la valeur de p\+\_\+date\+Ouverture 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classbancaire_1_1Compte_a15a9dd06b34b949817f2ca345ed3ebd5}\label{classbancaire_1_1Compte_a15a9dd06b34b949817f2ca345ed3ebd5}} 
+\index{bancaire::Compte@{bancaire::Compte}!````~Compte@{$\sim$Compte}}
+\index{````~Compte@{$\sim$Compte}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{$\sim$Compte()}{~Compte()}}
+{\footnotesize\ttfamily Compte\+::$\sim$\+Compte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructeur virtuel. 
+
+Destructeur virtuel de la classe \mbox{\hyperlink{classbancaire_1_1Compte}{Compte}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbancaire_1_1Compte_a650f1cba5374bc35e6a213425cd456a2}\label{classbancaire_1_1Compte_a650f1cba5374bc35e6a213425cd456a2}} 
+\index{bancaire::Compte@{bancaire::Compte}!asgDescription@{asgDescription}}
+\index{asgDescription@{asgDescription}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{asgDescription()}{asgDescription()}}
+{\footnotesize\ttfamily void Compte\+::asg\+Description (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+description }\end{DoxyParamCaption})}
+
+
+
+Mutateur pour la description. 
+
+Méthode mutateur pour modifier la description du compte.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+description} & Nouvelle description\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+description == p\+\_\+description 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classbancaire_1_1Compte_a304a5d0ef69cac0831e20e081b081b27}\label{classbancaire_1_1Compte_a304a5d0ef69cac0831e20e081b081b27}} 
+\index{bancaire::Compte@{bancaire::Compte}!asgSolde@{asgSolde}}
+\index{asgSolde@{asgSolde}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{asgSolde()}{asgSolde()}}
+{\footnotesize\ttfamily void Compte\+::asg\+Solde (\begin{DoxyParamCaption}\item[{double}]{p\+\_\+solde }\end{DoxyParamCaption})}
+
+
+
+Mutateur pour le solde. 
+
+Méthode mutateur pour modifier le solde du compte.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+solde} & Nouveau solde\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+solde == p\+\_\+solde 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classbancaire_1_1Compte_a5fc1553236d3a4d88b026bdf8d02fb9a}\label{classbancaire_1_1Compte_a5fc1553236d3a4d88b026bdf8d02fb9a}} 
+\index{bancaire::Compte@{bancaire::Compte}!asgTauxInteret@{asgTauxInteret}}
+\index{asgTauxInteret@{asgTauxInteret}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{asgTauxInteret()}{asgTauxInteret()}}
+{\footnotesize\ttfamily void Compte\+::asg\+Taux\+Interet (\begin{DoxyParamCaption}\item[{double}]{p\+\_\+taux\+Interet }\end{DoxyParamCaption})}
+
+
+
+Mutateur pour le taux d\textquotesingle{}intérêt. 
+
+Méthode mutateur pour modifier le taux d\textquotesingle{}intérêt.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet} & Nouveau taux d\textquotesingle{}intérêt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+taux\+Interet == p\+\_\+taux\+Interet 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classbancaire_1_1Compte_a1b2a90ab52ab6fb9cbf4f69a6f13020b}\label{classbancaire_1_1Compte_a1b2a90ab52ab6fb9cbf4f69a6f13020b}} 
+\index{bancaire::Compte@{bancaire::Compte}!calculerInteret@{calculerInteret}}
+\index{calculerInteret@{calculerInteret}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{calculerInteret()}{calculerInteret()}}
+{\footnotesize\ttfamily double Compte\+::calculer\+Interet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Méthode virtuelle qui calcule l\textquotesingle{}intérêt à payer sur le compte. 
+
+Méthode qui permet de calculer les intérêts d’un compte selon sa spécialisation.
+
+\begin{DoxyReturn}{Returns}
+Par défaut, retourne 0 pour la classe de base. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classCompteDeTest_abb825d2030986768ff5ba3a6e1e49c1d}{Compte\+De\+Test}}, \mbox{\hyperlink{classCheque_ac487f6fb37d5262701c5538252b68e05}{Cheque}}, and \mbox{\hyperlink{classEpargne_a7f25db9fff8ca129e27d20ee3bb91ea0}{Epargne}}.
+
+\mbox{\Hypertarget{classbancaire_1_1Compte_a0fa547193d6056cf12d75a7ac38bc2a9}\label{classbancaire_1_1Compte_a0fa547193d6056cf12d75a7ac38bc2a9}} 
+\index{bancaire::Compte@{bancaire::Compte}!reqCompteFormate@{reqCompteFormate}}
+\index{reqCompteFormate@{reqCompteFormate}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{reqCompteFormate()}{reqCompteFormate()}}
+{\footnotesize\ttfamily std\+::string Compte\+::req\+Compte\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode qui formate les informations du compte sous forme de chaîne. 
+
+Méthode pour obtenir une représentation formatée du compte.
+
+\begin{DoxyReturn}{Returns}
+Une chaîne de caractères représentant le compte. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbancaire_1_1Compte_adacbc33a381d2e254ca75445091bc0bc}\label{classbancaire_1_1Compte_adacbc33a381d2e254ca75445091bc0bc}} 
+\index{bancaire::Compte@{bancaire::Compte}!reqDateOuverture@{reqDateOuverture}}
+\index{reqDateOuverture@{reqDateOuverture}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{reqDateOuverture()}{reqDateOuverture()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \& Compte\+::req\+Date\+Ouverture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la date d\textquotesingle{}ouverture. 
+
+Méthode accesseur pour obtenir la date d\textquotesingle{}ouverture du compte.
+
+\begin{DoxyReturn}{Returns}
+La date d\textquotesingle{}ouverture du compte. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbancaire_1_1Compte_aff6a2b802b26a6a1030fab2c8de34bfc}\label{classbancaire_1_1Compte_aff6a2b802b26a6a1030fab2c8de34bfc}} 
+\index{bancaire::Compte@{bancaire::Compte}!reqDescription@{reqDescription}}
+\index{reqDescription@{reqDescription}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{reqDescription()}{reqDescription()}}
+{\footnotesize\ttfamily std\+::string Compte\+::req\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la description. 
+
+Méthode accesseur pour obtenir la description du compte.
+
+\begin{DoxyReturn}{Returns}
+La description du compte. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbancaire_1_1Compte_afd048a6379fba56659f555bf2faeec29}\label{classbancaire_1_1Compte_afd048a6379fba56659f555bf2faeec29}} 
+\index{bancaire::Compte@{bancaire::Compte}!reqNoCompte@{reqNoCompte}}
+\index{reqNoCompte@{reqNoCompte}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{reqNoCompte()}{reqNoCompte()}}
+{\footnotesize\ttfamily int Compte\+::req\+No\+Compte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le numéro de compte. 
+
+Méthode accesseur pour obtenir le numéro de compte.
+
+\begin{DoxyReturn}{Returns}
+Le numéro de compte. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbancaire_1_1Compte_af29ace93cf63d6c4a7fd3d0a39ab166f}\label{classbancaire_1_1Compte_af29ace93cf63d6c4a7fd3d0a39ab166f}} 
+\index{bancaire::Compte@{bancaire::Compte}!reqSolde@{reqSolde}}
+\index{reqSolde@{reqSolde}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{reqSolde()}{reqSolde()}}
+{\footnotesize\ttfamily double Compte\+::req\+Solde (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le solde. 
+
+Méthode accesseur pour obtenir le solde du compte.
+
+\begin{DoxyReturn}{Returns}
+Le solde du compte. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbancaire_1_1Compte_a4053ef50946772548fcb743a691c6e91}\label{classbancaire_1_1Compte_a4053ef50946772548fcb743a691c6e91}} 
+\index{bancaire::Compte@{bancaire::Compte}!reqTauxInteret@{reqTauxInteret}}
+\index{reqTauxInteret@{reqTauxInteret}!bancaire::Compte@{bancaire::Compte}}
+\doxysubsubsection{\texorpdfstring{reqTauxInteret()}{reqTauxInteret()}}
+{\footnotesize\ttfamily double Compte\+::req\+Taux\+Interet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le taux d\textquotesingle{}intérêt. 
+
+Méthode accesseur pour obtenir le taux d\textquotesingle{}intérêt.
+
+\begin{DoxyReturn}{Returns}
+Le taux d\textquotesingle{}intérêt. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Compte_8h}{Compte.\+h}}\item 
+\mbox{\hyperlink{Compte_8cpp}{Compte.\+cpp}}\end{DoxyCompactItemize}

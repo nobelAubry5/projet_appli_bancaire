@@ -1,0 +1,342 @@
+\hypertarget{classClient}{}\doxysection{Client Class Reference}
+\label{classClient}\index{Client@{Client}}
+
+
+Classe modélisant la gestion des comptes.  
+
+
+
+
+{\ttfamily \#include $<$Client.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClient_a48250dd905e17e823a2935f647e501b5}{Client}} (int p\+\_\+no\+Folio, const std\+::string \&p\+\_\+nom, const std\+::string \&p\+\_\+prenom, const std\+::string \&p\+\_\+telephone, const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \&p\+\_\+date\+Naissance)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classClient}{Client}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classClient_a840e519ca781888cbd54181572ebe3a7}{$\sim$\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \mbox{\hyperlink{classClient}{Client}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClient_acfa8686a0994751269f339cd5ea1490c}\label{classClient_acfa8686a0994751269f339cd5ea1490c}} 
+\mbox{\hyperlink{classClient_acfa8686a0994751269f339cd5ea1490c}{Client}} (const \mbox{\hyperlink{classClient}{Client}} \&p\+\_\+client)
+\begin{DoxyCompactList}\small\item\em Constructeur copie de la classe \mbox{\hyperlink{classClient}{Client}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classClient_a0374370dc539d0d9a36b334bc88b1b94}\label{classClient_a0374370dc539d0d9a36b334bc88b1b94}} 
+\mbox{\hyperlink{classClient}{Client}} \& \mbox{\hyperlink{classClient_a0374370dc539d0d9a36b334bc88b1b94}{operator=}} (const \mbox{\hyperlink{classClient}{Client}} \&p\+\_\+client)
+\begin{DoxyCompactList}\small\item\em Opérateur d\textquotesingle{}assignation de la classe \mbox{\hyperlink{classClient}{Client}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classClient_acb1324e8798bd55850bf3444939651b2}{req\+No\+Folio}} () const
+\begin{DoxyCompactList}\small\item\em Méthode accesseur pour obtenir le numéro de folio du client. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classClient_a0d4f9d8d24b6bdd7ae4ba01976ad7f60}{req\+Nom}} () const
+\begin{DoxyCompactList}\small\item\em Méthode accesseur pour obtenir le nom du client. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classClient_a13ea1f97940f013e37b2fbedb9a8cf26}{req\+Prenom}} () const
+\begin{DoxyCompactList}\small\item\em Méthode accesseur pour obtenir le prénom du client. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classClient_aa900cf9c30672216c8a94c4b138871b6}{req\+Telephone}} () const
+\begin{DoxyCompactList}\small\item\em Méthode accesseur pour obtenir le numéro de téléphone du client. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \& \mbox{\hyperlink{classClient_afd192591badd6e1a89ad82401aa8cddf}{req\+Date\+Naissance}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la date de naissance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_afd082a02bf69390f80ae812e2305321f}{asg\+Nom}} (const std\+::string \&p\+\_\+nom)
+\begin{DoxyCompactList}\small\item\em Méthode mutateur pour modifier le nom du client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_a78d9032fa3fd6b99cae604a7047efc3a}{asg\+Prenom}} (const std\+::string \&p\+\_\+prenom)
+\begin{DoxyCompactList}\small\item\em Méthode mutateur pour modifier le prénom du client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_a0bbbbea24d8b04ed173ae3a9e1344ece}{asg\+Telephone}} (const std\+::string \&p\+\_\+telephone)
+\begin{DoxyCompactList}\small\item\em Méthode mutateur pour modifier le numéro de téléphone du client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classClient_a6ada8137b39e102a30b58ad57f8d1374}{ajouter\+Compte}} (const \mbox{\hyperlink{classbancaire_1_1Compte}{bancaire\+::\+Compte}} \&p\+\_\+nouveau\+Compte)
+\begin{DoxyCompactList}\small\item\em Méthode pour ajouter un compte au client. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classClient_ae50b6fbb53a8680f2708dc7d128d34f1}{req\+Client\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir une représentation formatée du client. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classClient_a1576a3a5c40e1db41418b5e5c1fafc9d}{req\+Releves}} () const
+\begin{DoxyCompactList}\small\item\em Méthode pour obtenir le relevé de tous les comptes du client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classClient_ae151fb8cda58b080b6aee8a6e345e7ac}{valider\+Format\+Nom}} (const std\+::string \&p\+\_\+nom)
+\begin{DoxyCompactList}\small\item\em Méthode pour valider le format du nom et du prénom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe modélisant la gestion des comptes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classClient_a48250dd905e17e823a2935f647e501b5}\label{classClient_a48250dd905e17e823a2935f647e501b5}} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+no\+Folio,  }\item[{const std\+::string \&}]{p\+\_\+nom,  }\item[{const std\+::string \&}]{p\+\_\+prenom,  }\item[{const std\+::string \&}]{p\+\_\+telephone,  }\item[{const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \&}]{p\+\_\+date\+Naissance }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classClient}{Client}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Folio} & Le numéro de folio du client \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom} & Le nom du client \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+prenom} & Le prénom du client \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+telephone} & Le numéro de téléphone du client\\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Folio} & Le numéro de folio du client \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom} & Le nom du client \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+prenom} & Le prénom du client \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+telephone} & Le numéro de téléphone du client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+no\+Folio doit être supérieur a 1000 et inférieur a 10000 
+
+p\+\_\+nom et p\+\_\+prenom doivent respecter un format valide 
+
+p\+\_\+telephone ne doit pas être vide 
+
+p\+\_\+date\+Naissance doit avoir une année supérieur a 1970 et inferieur a 2037 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+no\+Folio prends la valeur de p\+\_\+no\+Folio 
+
+m\+\_\+nom prends la valeur de p\+\_\+nom 
+
+m\+\_\+prenom prends la valeur de p\+\_\+prenom 
+
+m\+\_\+telephone prends la valeur de p\+\_\+telephone 
+
+m\+\_\+date\+Naissance prends la valeur de p\+\_\+date\+Naissance 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classClient_a840e519ca781888cbd54181572ebe3a7}\label{classClient_a840e519ca781888cbd54181572ebe3a7}} 
+\index{Client@{Client}!````~Client@{$\sim$Client}}
+\index{````~Client@{$\sim$Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{$\sim$Client()}{~Client()}}
+{\footnotesize\ttfamily Client\+::$\sim$\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la classe \mbox{\hyperlink{classClient}{Client}}. 
+
+Destructeur virtuel de \mbox{\hyperlink{classClient}{Client}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classClient_a6ada8137b39e102a30b58ad57f8d1374}\label{classClient_a6ada8137b39e102a30b58ad57f8d1374}} 
+\index{Client@{Client}!ajouterCompte@{ajouterCompte}}
+\index{ajouterCompte@{ajouterCompte}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{ajouterCompte()}{ajouterCompte()}}
+{\footnotesize\ttfamily void Client\+::ajouter\+Compte (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbancaire_1_1Compte}{bancaire\+::\+Compte}} \&}]{p\+\_\+nouveau\+Compte }\end{DoxyParamCaption})}
+
+
+
+Méthode pour ajouter un compte au client. 
+
+Ajouter le compte au client.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nouveau\+Compte} & Le compte a ajouter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClient_afd082a02bf69390f80ae812e2305321f}\label{classClient_afd082a02bf69390f80ae812e2305321f}} 
+\index{Client@{Client}!asgNom@{asgNom}}
+\index{asgNom@{asgNom}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{asgNom()}{asgNom()}}
+{\footnotesize\ttfamily void Client\+::asg\+Nom (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+nom }\end{DoxyParamCaption})}
+
+
+
+Méthode mutateur pour modifier le nom du client. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom} & Le nouveau nom du client\\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom} & Le nouveau nom du client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+nom doit respecter un format valide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+nom prend la valeur de p\+\_\+nom 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classClient_a78d9032fa3fd6b99cae604a7047efc3a}\label{classClient_a78d9032fa3fd6b99cae604a7047efc3a}} 
+\index{Client@{Client}!asgPrenom@{asgPrenom}}
+\index{asgPrenom@{asgPrenom}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{asgPrenom()}{asgPrenom()}}
+{\footnotesize\ttfamily void Client\+::asg\+Prenom (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+prenom }\end{DoxyParamCaption})}
+
+
+
+Méthode mutateur pour modifier le prénom du client. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+prenom} & Le nouveau prénom du client\\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+prenom} & Le nouveau prénom du client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+prenom doit respecter un format valide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+prenom prend la valeur de p\+\_\+prenom 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classClient_a0bbbbea24d8b04ed173ae3a9e1344ece}\label{classClient_a0bbbbea24d8b04ed173ae3a9e1344ece}} 
+\index{Client@{Client}!asgTelephone@{asgTelephone}}
+\index{asgTelephone@{asgTelephone}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{asgTelephone()}{asgTelephone()}}
+{\footnotesize\ttfamily void Client\+::asg\+Telephone (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+telephone }\end{DoxyParamCaption})}
+
+
+
+Méthode mutateur pour modifier le numéro de téléphone du client. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+telephone} & Le nouveau numéro de téléphone du client\\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+telephone} & Le nouveau numéro de téléphone du client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+telephone ne doit pas être vide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+telephone prend la valeur de p\+\_\+telephone 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classClient_ae50b6fbb53a8680f2708dc7d128d34f1}\label{classClient_ae50b6fbb53a8680f2708dc7d128d34f1}} 
+\index{Client@{Client}!reqClientFormate@{reqClientFormate}}
+\index{reqClientFormate@{reqClientFormate}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqClientFormate()}{reqClientFormate()}}
+{\footnotesize\ttfamily std\+::string Client\+::req\+Client\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir une représentation formatée du client. 
+
+Affiche les informations du \mbox{\hyperlink{classClient}{Client}} sous forme d\textquotesingle{}une chaîne de caractère formatee.
+
+\begin{DoxyReturn}{Returns}
+Une chaîne de caractères représentant le client
+
+les information du client 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClient_afd192591badd6e1a89ad82401aa8cddf}\label{classClient_afd192591badd6e1a89ad82401aa8cddf}} 
+\index{Client@{Client}!reqDateNaissance@{reqDateNaissance}}
+\index{reqDateNaissance@{reqDateNaissance}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqDateNaissance()}{reqDateNaissance()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \& Client\+::req\+Date\+Naissance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la date de naissance. 
+
+Méthode accesseur pour obtenir la date de naissance du client.
+
+\begin{DoxyReturn}{Returns}
+La date de naissance du client
+
+La date du naissance du client. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClient_acb1324e8798bd55850bf3444939651b2}\label{classClient_acb1324e8798bd55850bf3444939651b2}} 
+\index{Client@{Client}!reqNoFolio@{reqNoFolio}}
+\index{reqNoFolio@{reqNoFolio}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqNoFolio()}{reqNoFolio()}}
+{\footnotesize\ttfamily int Client\+::req\+No\+Folio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode accesseur pour obtenir le numéro de folio du client. 
+
+Méthode accesseur pour obtenir la date d\textquotesingle{}ouverture du compte.
+
+\begin{DoxyReturn}{Returns}
+Le numéro de folio du client
+
+La date d\textquotesingle{}ouverture du compte. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClient_a0d4f9d8d24b6bdd7ae4ba01976ad7f60}\label{classClient_a0d4f9d8d24b6bdd7ae4ba01976ad7f60}} 
+\index{Client@{Client}!reqNom@{reqNom}}
+\index{reqNom@{reqNom}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqNom()}{reqNom()}}
+{\footnotesize\ttfamily std\+::string Client\+::req\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode accesseur pour obtenir le nom du client. 
+
+\begin{DoxyReturn}{Returns}
+Le nom du client
+
+Le nom du client. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClient_a13ea1f97940f013e37b2fbedb9a8cf26}\label{classClient_a13ea1f97940f013e37b2fbedb9a8cf26}} 
+\index{Client@{Client}!reqPrenom@{reqPrenom}}
+\index{reqPrenom@{reqPrenom}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqPrenom()}{reqPrenom()}}
+{\footnotesize\ttfamily std\+::string Client\+::req\+Prenom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode accesseur pour obtenir le prénom du client. 
+
+Méthode accesseur pour obtenir le prenom du client.
+
+\begin{DoxyReturn}{Returns}
+Le prénom du client
+
+Le prenom du client. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClient_a1576a3a5c40e1db41418b5e5c1fafc9d}\label{classClient_a1576a3a5c40e1db41418b5e5c1fafc9d}} 
+\index{Client@{Client}!reqReleves@{reqReleves}}
+\index{reqReleves@{reqReleves}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqReleves()}{reqReleves()}}
+{\footnotesize\ttfamily std\+::string Client\+::req\+Releves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour obtenir le relevé de tous les comptes du client. 
+
+\begin{DoxyReturn}{Returns}
+Une chaîne de caractères représentant les informations du client et des ses comptes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClient_aa900cf9c30672216c8a94c4b138871b6}\label{classClient_aa900cf9c30672216c8a94c4b138871b6}} 
+\index{Client@{Client}!reqTelephone@{reqTelephone}}
+\index{reqTelephone@{reqTelephone}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqTelephone()}{reqTelephone()}}
+{\footnotesize\ttfamily std\+::string Client\+::req\+Telephone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Méthode accesseur pour obtenir le numéro de téléphone du client. 
+
+\begin{DoxyReturn}{Returns}
+Le numéro de téléphone du client
+
+Le numéro de téléphone du client. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClient_ae151fb8cda58b080b6aee8a6e345e7ac}\label{classClient_ae151fb8cda58b080b6aee8a6e345e7ac}} 
+\index{Client@{Client}!validerFormatNom@{validerFormatNom}}
+\index{validerFormatNom@{validerFormatNom}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{validerFormatNom()}{validerFormatNom()}}
+{\footnotesize\ttfamily bool Client\+::valider\+Format\+Nom (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+nom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Méthode pour valider le format du nom et du prénom. 
+
+Valide le format d\textquotesingle{}un nom (nom ou prénom)
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom} & a valider. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si le format est valide, false sinon 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Client.\+h\item 
+\mbox{\hyperlink{Client_8cpp}{Client.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="UnCheque" name="UnCheque">
+<area shape="rect" id="node1" title="Création d&#39;une fixture utilisé pour les tests de la classe Cheque." alt="" coords="33,171,122,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,107,108"/>
+<area shape="rect" id="node3" href="$classCheque.html" title="Classe dérivée de la classe Compte." alt="" coords="131,81,202,108"/>
+<area shape="rect" id="node4" href="$classbancaire_1_1Compte.html" title="Classe modélisant tous les types de comptes d’un client." alt="" coords="98,5,235,32"/>
+</map>

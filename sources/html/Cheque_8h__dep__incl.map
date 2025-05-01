@@ -1,0 +1,5 @@
+<map id="Cheque.h" name="Cheque.h">
+<area shape="rect" id="node1" title="Classe Cheque, dérivée de la classe Compte." alt="" coords="92,5,175,32"/>
+<area shape="rect" id="node2" href="$Cheque_8cpp.html" title="Implémentation de la classe Cheque." alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$ClientTesteur_8cpp.html" title="Test unitaire de la classe Client." alt="" coords="129,80,298,107"/>
+</map>

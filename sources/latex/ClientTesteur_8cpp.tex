@@ -1,0 +1,119 @@
+\hypertarget{ClientTesteur_8cpp}{}\doxysection{tests/\+Client\+Testeur.cpp File Reference}
+\label{ClientTesteur_8cpp}\index{tests/ClientTesteur.cpp@{tests/ClientTesteur.cpp}}
+
+
+Test unitaire de la classe \mbox{\hyperlink{classClient}{Client}}.  
+
+
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}Client.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Epargne.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cheque.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Contrat\+Exception.\+h\char`\"{}}\newline
+Include dependency graph for Client\+Testeur.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ClientTesteur_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classUnClient}{Un\+Client}}
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}une fixture utilisé pour les tests de la classe \mbox{\hyperlink{classClient}{Client}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ClientTesteur_8cpp_a316ba8689fe28fdf0ddc35c9218a15c3}{TEST}} (Client\+Test, Client\+Test\+\_\+constructeur\+\_\+par\+Defaut\+\_\+objet\+Valide)
+\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_adc9b18a2c5e63217b0478180d0964f6e}\label{ClientTesteur_8cpp_adc9b18a2c5e63217b0478180d0964f6e}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_adc9b18a2c5e63217b0478180d0964f6e}{TEST}} (Client\+Test, Constructeur\+\_\+\+Numero\+Folio\+Invalide\+Trop\+Petit\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un numéro de folio invalide (trop petit). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a1991c61e870c76d412d955cce03489c1}\label{ClientTesteur_8cpp_a1991c61e870c76d412d955cce03489c1}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a1991c61e870c76d412d955cce03489c1}{TEST}} (Client\+Test, Constructeur\+\_\+\+Numero\+Folio\+Invalide\+Trop\+Grand\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un numéro de folio invalide (trop grand). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a310136a217671915c87457fa0fb2c1fc}\label{ClientTesteur_8cpp_a310136a217671915c87457fa0fb2c1fc}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a310136a217671915c87457fa0fb2c1fc}{TEST}} (Client\+Test, Constructeur\+\_\+\+Nom\+Invalide\+Vide\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un nom invalide (vide). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a0dd2b4593af6904962804e2c1f5b64bb}\label{ClientTesteur_8cpp_a0dd2b4593af6904962804e2c1f5b64bb}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a0dd2b4593af6904962804e2c1f5b64bb}{TEST}} (Client\+Test, Constructeur\+\_\+\+Nom\+Invalide\+Format\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un nom invalide (format invalide). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_aac2af455107cc876725cfa7be968c553}\label{ClientTesteur_8cpp_aac2af455107cc876725cfa7be968c553}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_aac2af455107cc876725cfa7be968c553}{TEST}} (Client\+Test, Constructeur\+\_\+\+Prenom\+Invalide\+Vide\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un prenom invalide (vide). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_aa25d6e8cbba346d152916d508adb9c86}\label{ClientTesteur_8cpp_aa25d6e8cbba346d152916d508adb9c86}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_aa25d6e8cbba346d152916d508adb9c86}{TEST}} (Client\+Test, Constructeur\+\_\+\+Prenom\+Invalide\+Format\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un prenom invalide (format invalide). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_aa12d398118ddbbb54facaa2bd6cb9e96}\label{ClientTesteur_8cpp_aa12d398118ddbbb54facaa2bd6cb9e96}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_aa12d398118ddbbb54facaa2bd6cb9e96}{TEST}} (Client\+Test, Constructeur\+\_\+\+Numero\+Telephone\+Invalide\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec un numéro de téléphone invalide (vide). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a309aff46b755930768681da762910794}\label{ClientTesteur_8cpp_a309aff46b755930768681da762910794}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a309aff46b755930768681da762910794}{TEST}} (Client\+Test, Constructeur\+\_\+\+Date\+Naissance\+Invalide\+Trop\+Petit\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec une date de naissance invalide (avant 1970). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a8af7c0c611068b28ec54f6882de26e48}\label{ClientTesteur_8cpp_a8af7c0c611068b28ec54f6882de26e48}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a8af7c0c611068b28ec54f6882de26e48}{TEST}} (Client\+Test, Constructeur\+\_\+\+Date\+Naissance\+Invalide\+Trop\+Grand\+\_\+\+Precondition\+Exception)
+\begin{DoxyCompactList}\small\item\em Test du constructeur avec une date de naissance invalide (après 2037). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a69301b4b12131fd127f5d3e5b0075677}\label{ClientTesteur_8cpp_a69301b4b12131fd127f5d3e5b0075677}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a69301b4b12131fd127f5d3e5b0075677}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Req\+No\+Folio\+\_\+\+No\+Folio\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+No\+Folio(). Cas valides\+: req\+No\+Folio vérifie le retour du numéro de folio du client Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a932a57929c265834c99e5bb90c4bfa72}\label{ClientTesteur_8cpp_a932a57929c265834c99e5bb90c4bfa72}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a932a57929c265834c99e5bb90c4bfa72}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Req\+Nom\+\_\+\+Nom\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Nom(). Cas valides\+: req\+Nom vérifie le retour du nom du client Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_af6ddaf944115d83ffe5226f05ab8f692}\label{ClientTesteur_8cpp_af6ddaf944115d83ffe5226f05ab8f692}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_af6ddaf944115d83ffe5226f05ab8f692}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Req\+Prenom\+\_\+\+Prenom\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Prenom(). Cas valides\+: req\+Prenom vérifie le retour du prenom du client Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_ab8084b3412922a7628975840ba9dad5b}\label{ClientTesteur_8cpp_ab8084b3412922a7628975840ba9dad5b}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_ab8084b3412922a7628975840ba9dad5b}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Req\+Telephone\+\_\+\+Telephone\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Telephone(). Cas valides\+: req\+Telephone vérifie le numéro de telephone du client Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_ac68026e613a21b64373e484ef617795d}\label{ClientTesteur_8cpp_ac68026e613a21b64373e484ef617795d}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_ac68026e613a21b64373e484ef617795d}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Req\+Date\+Naissance\+\_\+\+Date\+Naissance\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Date\+Naissance(). Cas valides\+: req\+Date\+Naissance vérifie la date de naissance du client Cas invalides\+: aucun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a44901b2b2245d889281628d8fc7e321b}\label{ClientTesteur_8cpp_a44901b2b2245d889281628d8fc7e321b}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a44901b2b2245d889281628d8fc7e321b}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Asg\+Nom\+\_\+\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode asg\+Nom() -\/ Cas valide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a46f8fe7e471e2136b890aa784dd21fda}\label{ClientTesteur_8cpp_a46f8fe7e471e2136b890aa784dd21fda}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a46f8fe7e471e2136b890aa784dd21fda}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Asg\+Prenom\+\_\+\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode asg\+Prenom() -\/ Cas valide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a31208b3c9df6a7b8efdcce5c379b374f}\label{ClientTesteur_8cpp_a31208b3c9df6a7b8efdcce5c379b374f}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a31208b3c9df6a7b8efdcce5c379b374f}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Asg\+Telephone\+\_\+\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode asg\+Telephone() -\/ Cas valide. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_a25351dbdd9ed6e391b0dffae5b0b7d68}\label{ClientTesteur_8cpp_a25351dbdd9ed6e391b0dffae5b0b7d68}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_a25351dbdd9ed6e391b0dffae5b0b7d68}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Ajouter\+Compte)
+\begin{DoxyCompactList}\small\item\em Test de la méthode ajouter\+Compte(). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_abe39b40a23456bfe288c623a5e0c20a6}\label{ClientTesteur_8cpp_abe39b40a23456bfe288c623a5e0c20a6}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_abe39b40a23456bfe288c623a5e0c20a6}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Req\+Releves\+\_\+\+Releves\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Releves(). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ClientTesteur_8cpp_af2b98f99c904881c7068ac2e365be2b3}\label{ClientTesteur_8cpp_af2b98f99c904881c7068ac2e365be2b3}} 
+\mbox{\hyperlink{ClientTesteur_8cpp_af2b98f99c904881c7068ac2e365be2b3}{TEST\+\_\+F}} (\mbox{\hyperlink{classUnClient}{Un\+Client}}, Req\+Client\+Formate\+\_\+\+\_\+\+Format\+Valide)
+\begin{DoxyCompactList}\small\item\em Test de la méthode req\+Client\+Formate(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Test unitaire de la classe \mbox{\hyperlink{classClient}{Client}}. 
+
+\begin{DoxyAuthor}{Author}
+Aubry Nobel Niyonkuru 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05 avril 2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ClientTesteur_8cpp_a316ba8689fe28fdf0ddc35c9218a15c3}\label{ClientTesteur_8cpp_a316ba8689fe28fdf0ddc35c9218a15c3}} 
+\index{ClientTesteur.cpp@{ClientTesteur.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!ClientTesteur.cpp@{ClientTesteur.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}}
+{\footnotesize\ttfamily TEST (\begin{DoxyParamCaption}\item[{Client\+Test}]{,  }\item[{Client\+Test\+\_\+constructeur\+\_\+par\+Defaut\+\_\+objet\+Valide}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000001}{Test}}]Test du constructeur Cas valides\+: Creation d’un objet \mbox{\hyperlink{classClient}{Client}} et verification de l’assignation de tous les attributs \end{DoxyRefDesc}

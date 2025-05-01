@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classbancaire_1_1Compte.html" title="Classe modélisant tous les types de comptes d’un client." alt="" coords="5,56,143,83"/>
+<area shape="rect" id="node2" href="$classCheque.html" title="Classe dérivée de la classe Compte." alt="" coords="214,5,285,32"/>
+<area shape="rect" id="node3" href="$classCompteDeTest.html" title=" " alt="" coords="191,56,308,83"/>
+<area shape="rect" id="node4" href="$classEpargne.html" title="Classe dérivée de la classe Compte." alt="" coords="212,107,287,133"/>
+</map>

@@ -1,0 +1,223 @@
+\hypertarget{classCheque}{}\doxysection{Cheque Class Reference}
+\label{classCheque}\index{Cheque@{Cheque}}
+
+
+Classe dérivée de la classe Compte.  
+
+
+
+
+{\ttfamily \#include $<$Cheque.\+h$>$}
+
+
+
+Inheritance diagram for Cheque\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classCheque__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cheque\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classCheque__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCheque_a458e8a90c445c31c428f09543bd6d5d5}{Cheque}} (int p\+\_\+no\+Compte, double p\+\_\+taux\+Interet, double p\+\_\+solde, const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \&p\+\_\+date\+Ouverture, const std\+::string \&p\+\_\+description=\char`\"{}Cheque\char`\"{}, int p\+\_\+nombre\+Transactions=0, double p\+\_\+taux\+Interet\+Minimum=0.\+0)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCheque_a4f5d366c0a0998935f1e0753ecb393ab}\label{classCheque_a4f5d366c0a0998935f1e0753ecb393ab}} 
+virtual \mbox{\hyperlink{classCheque_a4f5d366c0a0998935f1e0753ecb393ab}{$\sim$\+Cheque}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCheque_a8adef715a7513f10bb5109a0c866a967}{req\+Nombre\+Transactions}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nombre de transactions. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCheque_a57d7578364266dc3bdda7ce0bb357518}{req\+Taux\+Interet\+Minimum}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le taux d\textquotesingle{}intérêt minimum. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCheque_ac8b826207102cb4eac686db969b0ad47}{asg\+Taux\+Interet\+Minimum}} (double p\+\_\+taux\+Interet\+Minimum)
+\begin{DoxyCompactList}\small\item\em Mutateur pour le taux d\textquotesingle{}intéret minimum. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCheque_a06c92bb97ffb36738b32cbbb989a7538}{asg\+Nombre\+Transactions}} (int p\+\_\+nombre\+Transactions)
+\begin{DoxyCompactList}\small\item\em Mutateur pour le nombre de transactions. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classbancaire_1_1Compte}{bancaire\+::\+Compte}} $>$ \mbox{\hyperlink{classCheque_a4714b2eec96971057ac2abc41ac9cfe8}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Méthode de clonage (polymorphe) \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classCheque_ac487f6fb37d5262701c5538252b68e05}{calculer\+Interet}} () const override
+\begin{DoxyCompactList}\small\item\em Calcule l\textquotesingle{}intérêt à payer sur le compte. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCheque_a7f54205db37e8645d7e072721fe0cce4}{req\+Compte\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em Formate les informations du compte sous forme de chaîne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Classe dérivée de la classe Compte. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCheque_a458e8a90c445c31c428f09543bd6d5d5}\label{classCheque_a458e8a90c445c31c428f09543bd6d5d5}} 
+\index{Cheque@{Cheque}!Cheque@{Cheque}}
+\index{Cheque@{Cheque}!Cheque@{Cheque}}
+\doxysubsubsection{\texorpdfstring{Cheque()}{Cheque()}}
+{\footnotesize\ttfamily Cheque\+::\+Cheque (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+no\+Compte,  }\item[{double}]{p\+\_\+taux\+Interet,  }\item[{double}]{p\+\_\+solde,  }\item[{const \mbox{\hyperlink{classutil_1_1Date}{util\+::\+Date}} \&}]{p\+\_\+date\+Ouverture,  }\item[{const std\+::string \&}]{p\+\_\+description = {\ttfamily \char`\"{}Cheque\char`\"{}},  }\item[{int}]{p\+\_\+nombre\+Transactions = {\ttfamily 0},  }\item[{double}]{p\+\_\+taux\+Interet\+Minimum = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec paramètres. 
+
+Constructeur de la classe \mbox{\hyperlink{classCheque}{Cheque}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Compte} & Numéro du compte \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet} & Taux d\textquotesingle{}intérêt du compte \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+solde} & Solde du compte \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+description} & Description du compte (par défaut \char`\"{}\+Cheque\char`\"{}) \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date\+Ouverture} & Date d\textquotesingle{}ouverture du compte \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nombre\+Transactions} & Nombre de transactions (par défaut 0) \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet\+Minimum} & Taux d\textquotesingle{}intérêt minimum (par défaut 0.\+1\%)\\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Compte} & Le numéro de compte. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet} & Le taux d\textquotesingle{}intérêt du compte. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+solde} & Le solde initial du compte. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+description} & La description du compte. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date\+Ouverture} & La date d\textquotesingle{}ouverture du compte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+nombre\+Transactions doit etre supérieur a 0 et ne peut pas dépasser 40 transactions 
+
+p\+\_\+taux\+Interet\+Minimum doit etre par défaut de 0.\+1\% et ne pas etre supérieur au taux d\textquotesingle{}interet du compte 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+nombre\+Transactions prends la valeur de p\+\_\+nombre\+Transactions 
+
+m\+\_\+taux\+Interet\+Minimum prends la valeur de p\+\_\+taux\+Interet\+Minimum 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCheque_a06c92bb97ffb36738b32cbbb989a7538}\label{classCheque_a06c92bb97ffb36738b32cbbb989a7538}} 
+\index{Cheque@{Cheque}!asgNombreTransactions@{asgNombreTransactions}}
+\index{asgNombreTransactions@{asgNombreTransactions}!Cheque@{Cheque}}
+\doxysubsubsection{\texorpdfstring{asgNombreTransactions()}{asgNombreTransactions()}}
+{\footnotesize\ttfamily void Cheque\+::asg\+Nombre\+Transactions (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+nombre\+Transactions }\end{DoxyParamCaption})}
+
+
+
+Mutateur pour le nombre de transactions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nombre\+Transactions} & Nouveau nombre de transactions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCheque_ac8b826207102cb4eac686db969b0ad47}\label{classCheque_ac8b826207102cb4eac686db969b0ad47}} 
+\index{Cheque@{Cheque}!asgTauxInteretMinimum@{asgTauxInteretMinimum}}
+\index{asgTauxInteretMinimum@{asgTauxInteretMinimum}!Cheque@{Cheque}}
+\doxysubsubsection{\texorpdfstring{asgTauxInteretMinimum()}{asgTauxInteretMinimum()}}
+{\footnotesize\ttfamily void Cheque\+::asg\+Taux\+Interet\+Minimum (\begin{DoxyParamCaption}\item[{double}]{p\+\_\+taux\+Interet\+Minimum }\end{DoxyParamCaption})}
+
+
+
+Mutateur pour le taux d\textquotesingle{}intéret minimum. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+taux\+Interet\+Minimum} & Nouveau nombre de transactions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCheque_ac487f6fb37d5262701c5538252b68e05}\label{classCheque_ac487f6fb37d5262701c5538252b68e05}} 
+\index{Cheque@{Cheque}!calculerInteret@{calculerInteret}}
+\index{calculerInteret@{calculerInteret}!Cheque@{Cheque}}
+\doxysubsubsection{\texorpdfstring{calculerInteret()}{calculerInteret()}}
+{\footnotesize\ttfamily double Cheque\+::calculer\+Interet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calcule l\textquotesingle{}intérêt à payer sur le compte. 
+
+\begin{DoxyReturn}{Returns}
+Le montant d\textquotesingle{}intérêt à payer 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classbancaire_1_1Compte_a1b2a90ab52ab6fb9cbf4f69a6f13020b}{bancaire\+::\+Compte}}.
+
+\mbox{\Hypertarget{classCheque_a4714b2eec96971057ac2abc41ac9cfe8}\label{classCheque_a4714b2eec96971057ac2abc41ac9cfe8}} 
+\index{Cheque@{Cheque}!clone@{clone}}
+\index{clone@{clone}!Cheque@{Cheque}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classbancaire_1_1Compte}{bancaire\+::\+Compte}} $>$ Cheque\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Méthode de clonage (polymorphe) 
+
+Méthode de clonage.
+
+\begin{DoxyReturn}{Returns}
+Un pointeur unique vers une copie de l\textquotesingle{}objet 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbancaire_1_1Compte_ae176fb80746712350b54453110689ce5}{bancaire\+::\+Compte}}.
+
+\mbox{\Hypertarget{classCheque_a7f54205db37e8645d7e072721fe0cce4}\label{classCheque_a7f54205db37e8645d7e072721fe0cce4}} 
+\index{Cheque@{Cheque}!reqCompteFormate@{reqCompteFormate}}
+\index{reqCompteFormate@{reqCompteFormate}!Cheque@{Cheque}}
+\doxysubsubsection{\texorpdfstring{reqCompteFormate()}{reqCompteFormate()}}
+{\footnotesize\ttfamily std\+::string Cheque\+::req\+Compte\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Formate les informations du compte sous forme de chaîne. 
+
+\begin{DoxyReturn}{Returns}
+Une chaîne contenant les informations du compte cheque 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCheque_a8adef715a7513f10bb5109a0c866a967}\label{classCheque_a8adef715a7513f10bb5109a0c866a967}} 
+\index{Cheque@{Cheque}!reqNombreTransactions@{reqNombreTransactions}}
+\index{reqNombreTransactions@{reqNombreTransactions}!Cheque@{Cheque}}
+\doxysubsubsection{\texorpdfstring{reqNombreTransactions()}{reqNombreTransactions()}}
+{\footnotesize\ttfamily int Cheque\+::req\+Nombre\+Transactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le nombre de transactions. 
+
+\begin{DoxyReturn}{Returns}
+Le nombre de transactions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCheque_a57d7578364266dc3bdda7ce0bb357518}\label{classCheque_a57d7578364266dc3bdda7ce0bb357518}} 
+\index{Cheque@{Cheque}!reqTauxInteretMinimum@{reqTauxInteretMinimum}}
+\index{reqTauxInteretMinimum@{reqTauxInteretMinimum}!Cheque@{Cheque}}
+\doxysubsubsection{\texorpdfstring{reqTauxInteretMinimum()}{reqTauxInteretMinimum()}}
+{\footnotesize\ttfamily double Cheque\+::req\+Taux\+Interet\+Minimum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le taux d\textquotesingle{}intérêt minimum. 
+
+\begin{DoxyReturn}{Returns}
+Le taux d\textquotesingle{}intérêt minimum 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Cheque_8h}{Cheque.\+h}}\item 
+\mbox{\hyperlink{Cheque_8cpp}{Cheque.\+cpp}}\end{DoxyCompactItemize}
