@@ -1,8 +1,8 @@
-# Gestion de Comptes Bancaires en C++ 💰
+# Gestion de Comptes Bancaires en C++
 
 Ce projet est une application console en C++ simulant la gestion de comptes bancaires pour des clients, réalisée dans le cadre du cours **Programmation avancée en C++ (GIF-1003)**.
 
-## 🧰 Fonctionnalités principales
+## Fonctionnalités principales
 
 - Hiérarchie de classes : `Compte` (classe de base), `Epargne`, `Cheque`
 - Gestion de clients avec plusieurs comptes via `std::vector<std::unique_ptr<Compte>>`
